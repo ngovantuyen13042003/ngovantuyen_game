@@ -22,7 +22,7 @@ game.drawStructure = function (name, x, y) {
 }
 
 game.drawPlayer = function () {
-	actualPlayerTile = game.player.animations[game.player.direction][game.player.animationFrameNumber % 4]
+	actualPlayerTile = game.player.animations2[game.player.direction][game.player.animationFrameNumber % 4]
 	game.context.drawImage(
 		game.textures,
 		actualPlayerTile.tileColumn * game.options.tileWidth,

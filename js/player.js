@@ -38,6 +38,11 @@ game.player = {
 			left: [{tileColumn: 4, tileRow: 0}, {tileColumn: 5, tileRow: 0}, {tileColumn: 4, tileRow: 0}, {tileColumn: 6, tileRow: 0}],
 			right: [{tileColumn: 9, tileRow: 0}, {tileColumn: 8, tileRow: 0}, {tileColumn: 9, tileRow: 0}, {tileColumn: 7, tileRow: 0}]
 		},
+		animations2: {
+			// Describe coordinates of consecutive animation frames of objects in textures
+			left: [{ tileColumn: 1, tileRow: 5 }, { tileColumn: 2, tileRow: 5 }, { tileColumn: 1, tileRow: 5 }, { tileColumn: 3, tileRow: 5 }],
+			right: [{ tileColumn: 6, tileRow: 5 }, { tileColumn: 5, tileRow: 5 }, { tileColumn: 6, tileRow: 5 }, { tileColumn: 4, tileRow: 5 }]
+		},
 		jump: function (type) {
 			if (!this.isInAir) {
 				clearInterval(this.fallInterval)
